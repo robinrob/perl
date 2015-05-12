@@ -4,8 +4,8 @@ use strict;
 use warnings;
 
 
-sub routine(@args) {
-  print $args[0];
+sub routine {
+  print $_[0];
 }
 
 routine("robin");
