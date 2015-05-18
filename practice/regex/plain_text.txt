@@ -10,4 +10,4 @@ to make them correct within a html document, such as:
 The paragraphs of this document should be wrapped in <p></p>
 tags etc.
 
-username@hostname
+robin@mrrobinsmith.com
