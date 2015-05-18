@@ -1,0 +1,13 @@
+This is a plain-text document & example file for the
+tool `text_to_html.pl`.
+
+This document consists of several paragraps of plain text
+that includes various characters that need to be replaced
+to make them correct within a html document, such as:
+
+<, >, &
+
+The paragraphs of this document should be wrapped in <p></p>
+tags etc.
+
+username@hostname
