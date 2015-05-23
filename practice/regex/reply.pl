@@ -52,19 +52,19 @@ while (my $line = <>) {
     $subject = $1;
     print "subject: $subject\n";
   }
+  if ($line =~ m/^Date: (.*)/i) {
+   $date = $1;
+   print "date: $date\n"
+  }
   # if ($line =~ /^--[0-9a-z]{28}\nContent-Type:[^\n]+(.+)--[0-9a-z]{28}/ms) {
-  if ($line =~ m/^--[0-9a-z]{28}(.+)/ms) {
-    $body = $1;
-    print "body: $body\n";
-  }
-  if ($line =~ m/Received: .+ (Sun|Mon|Tue|Wed|Thu|Fri|Sat), ([0-9]{2}), ([a-zA-Z]{3}) ([0-9]{4}) ([0-9]{2}){3} ([-+][0-9]{4}) (\([A-Z]{3})\)/){
-    my $dayName = $1;
-    my $dayNum = $2;
-    my $monthName = $3;
-    my $year = $4;
-    my $time = $5;
-    my $time_diff = $6;
-    my $time_zone = $7;
-    print "$time_zone\n";
-  }
+  # if ($line =~ m/Received: .+ (Sun|Mon|Tue|Wed|Thu|Fri|Sat), ([0-9]{2}), ([a-zA-Z]{3}) ([0-9]{4}) ([0-9]{2}){3} ([-+][0-9]{4}) (\([A-Z]{3})\)/){
+  #   my $dayName = $1;
+  #   my $dayNum = $2;
+  #   my $monthName = $3;
+  #   my $year = $4;
+  #   my $time = $5;
+  #   my $time_diff = $6;
+  #   my $time_zone = $7;
+  #   print "$time_zone\n";
+  # }
 }
