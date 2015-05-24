@@ -11,3 +11,7 @@ The paragraphs of this document should be wrapped in <p></p>
 tags etc.
 
 robin@mrrobinsmith.com
+
+Please visit http://mrrobinsmith.com, website of Software Developer
+Robin Smith, to learn about coding techniques and personal views on
+software development.
