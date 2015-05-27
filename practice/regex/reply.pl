@@ -54,7 +54,7 @@ while (my $line = <>) {
   }
   if ($line =~ m/^Date: (.*)/i) {
    $date = $1;
-   print "date: $date\n"
+   print "date: $date\n";
   }
   # if ($line =~ /^--[0-9a-z]{28}\nContent-Type:[^\n]+(.+)--[0-9a-z]{28}/ms) {
   # if ($line =~ m/Received: .+ (Sun|Mon|Tue|Wed|Thu|Fri|Sat), ([0-9]{2}), ([a-zA-Z]{3}) ([0-9]{4}) ([0-9]{2}){3} ([-+][0-9]{4}) (\([A-Z]{3})\)/){
